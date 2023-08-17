@@ -51,6 +51,13 @@ const colorTexture = textureLoader.load(
     )
 const alphaTexture = textureLoader.load('/textures/door/alpha.jpg')
 
+colorTexture.repeat.x = 2
+colorTexture.repeat.y = 3
+colorTexture.wrapS = THREE.RepeatWrapping
+colorTexture.wrapT = THREE.RepeatWrapping
+
+colorTexture.offset.x = 0.5
+
 /**
  * Base
  */
